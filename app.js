@@ -55,13 +55,13 @@ console.log("Nama Kasir : " + nama_kasir);
 //    - JIKA namaPelanggan ada isinya: tampilkan alert sapaan dan log ke console.
 //    - JIKA namaPelanggan kosong / klik Cancel: beri nilai default "Pelanggan Setia" dan tampilkan alert pemberitahuan.
 
-alert("Selamat Datang di Kedai Kopi PSTI Kampus UPI");
+alert("Selamat Datang di Kedai Kopi PSTI Kampus UPI!");
 let nama_pelanggan = prompt("Halo! Masukkan nama anda untuk memulai: ");
 if (nama_pelanggan) {
     alert("Halo, " + nama_pelanggan + "! Kopi PSTI siap menemani.");
     console.log("Pelanggan Kopi PSTI : " + nama_pelanggan);
 } else {
-    alert("Anda tidak memasukkan nama, anda akan dipanggil Pelanngan Setia!");
+    alert("Anda tidak memasukkan nama, anda akan dipanggil Pelanggan Setia!");
     nama_pelanggan = "Pelanggan Setia";
     console.log("Pelanggan Setia " + nama_pelanggan);
 }
@@ -82,6 +82,13 @@ let poin_makanan = 49;
 let poin_merchandise = 35;
 
 let total_poin = poin_kopi + poin_makanan + poin_merchandise;
+
+console.log("=== Poin " + nama_pelanggan + "===");
+console.log("Poin Kopi : " + poin_kopi);
+console.log("Poin Makanan : " + poin_makanan);
+console.log("Poin Merchandise : " + poin_merchandise);
+
+console.log("Jumlah poin anda adalah " + total_poin);
 
 // ============================================================
 // AKTIVITAS 4: Percabangan if-else — Penentuan Tier Membership
